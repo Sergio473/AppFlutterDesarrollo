@@ -29,17 +29,18 @@ class _LoadingPageState extends State<LoadingPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: Colors.white,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
+          children: [
             Text(
-              "Loading Page",
+              "First App",
               style: titleStyleIndigo,
             ),
-            const AppProgressIndicator()
+            SizedBoxH20(),
+            AppProgressIndicator(),
           ],
         )),
     );

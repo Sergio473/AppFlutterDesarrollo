@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterappprueba/misc/constants.dart';
 import 'package:flutterappprueba/misc/validators.dart';
+import 'package:flutterappprueba/routes/route_manager.dart';
 
 class LoginForm extends StatefulWidget {
   const LoginForm({super.key});
@@ -55,10 +56,12 @@ class _LoginFormState extends State<LoginForm> {
           ),
           const SizedBoxH20(),
           //forgot password
-          ButtonBar(
+          OverflowBar(
             alignment: MainAxisAlignment.end,
             children: [
-              TextButton(onPressed: (){},
+              TextButton(onPressed: (){
+
+              },
               child: const Text("Forgot Password?",
               style: style16Black,))
             ],
@@ -74,7 +77,10 @@ class _LoginFormState extends State<LoginForm> {
             borderRadius: const BorderRadius.all(Radius.circular(20)),
             color: Colors.white,
             child: const Text('Sign up', 
-            style: style16Indigo,), onPressed: (){}),
+            style: style16Indigo,), onPressed: (){
+              Navigator.popAndPushNamed(
+                context, RouteManager.registerPage);
+            }),
             
         ],
       ),
