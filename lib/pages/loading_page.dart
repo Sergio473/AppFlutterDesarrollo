@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutterappprueba/misc/constants.dart';
 import 'package:flutterappprueba/routes/route_manager.dart';
 
 import '../widgets/app_progress_indicator.dart';
@@ -36,7 +37,7 @@ class _LoadingPageState extends State<LoadingPage> {
           children: const [
             Text(
               "Loading Page",
-              style: TextStyle(fontSize: 40.0, fontWeight: FontWeight.w300),
+              style: titleStyleIndigo,
             ),
             const AppProgressIndicator()
           ],
