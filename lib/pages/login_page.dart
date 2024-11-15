@@ -7,7 +7,7 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.indigo,
+      backgroundColor: Colors.white,
       body: SafeArea(
           child: Container(
               alignment: Alignment.center,
@@ -19,7 +19,7 @@ class LoginPage extends StatelessWidget {
                       SizedBox(
                         height: MediaQuery.of(context).size.height * 0.1,
                       ),
-                      const Text("First App",
+                      const Text("Login App",
                       style: TextStyle(
                         fontFamily: "Montserrat",
                         fontSize: 40.0,

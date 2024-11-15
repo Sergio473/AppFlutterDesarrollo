@@ -20,19 +20,19 @@ const enabledBorder = UnderlineInputBorder(
     borderRadius: BorderRadius.all(
       Radius.circular(15),
     ),
-    borderSide: BorderSide(width: 1, color: Colors.indigoAccent));
+    borderSide: BorderSide(width: 3, color: Colors.indigoAccent));
 
 const focusedBorder = UnderlineInputBorder(
     borderRadius: BorderRadius.all(
       Radius.circular(10),
     ),
-    borderSide: BorderSide(width: 2, color: Colors.indigoAccent));
+    borderSide: BorderSide(width: 3, color: Colors.indigoAccent));
 
 const errorBorder = UnderlineInputBorder(
     borderRadius: BorderRadius.all(
       Radius.circular(10),
     ),
-    borderSide: BorderSide(width: 2, color: Colors.red));
+    borderSide: BorderSide(width: 3, color: Colors.red));
 
 //Divider box
 class SizedBoxH10 extends StatelessWidget {
@@ -52,7 +52,7 @@ class SizedBoxH20 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const SizedBox(
-      height: 20,
+      height: 30,
     );
   }
 }
@@ -63,7 +63,7 @@ class SizedBoxH30 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const SizedBox(
-      height: 30,
+      height: 40,
     );
   }
 }
@@ -78,15 +78,15 @@ const TextStyle style16Indigo = TextStyle(
 
 const TextStyle style16White = TextStyle(
   fontFamily: "Montserrat",
-  fontSize: 16,
-  color: Colors.indigo,
-  fontWeight: FontWeight.w200
+  fontSize: 20,
+  color: Colors.white,
+  fontWeight: FontWeight.w500
 );
 
 const TextStyle style16Black = TextStyle(
-  fontSize: 16,
+  fontSize: 18,
   color: Colors.black,
-  fontWeight: FontWeight.w200
+  fontWeight: FontWeight.w400
 );
 const TextStyle titleStyleIndigo = TextStyle(
   fontFamily: "Montserrat",
